@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220502 04:57:52.577" rpa="false" schemaversion="3">
+<suite id="s1" name="WebTesting" source="E:\Python Automation Testing\PyAutoTester\Testers\WebTesting.robot">
+<test id="s1-t1" name="Open Test Website And Close Browser" line="11">
+<kw name="Open Test Website In Chrome">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${WEBSITE URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220502 04:57:52.929" level="INFO">Opening browser 'Chrome' to base url 'https://www.amazon.com/'.</msg>
+<status status="PASS" starttime="20220502 04:57:52.928" endtime="20220502 04:58:02.050"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220502 04:58:04.052" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220502 04:58:02.050" endtime="20220502 04:58:04.052"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Amazon.com. Spend less. Smile more.</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220502 04:58:04.068" level="INFO">Page title is 'Amazon.com. Spend less. Smile more.'.</msg>
+<status status="PASS" starttime="20220502 04:58:04.052" endtime="20220502 04:58:04.068"/>
+</kw>
+<status status="PASS" starttime="20220502 04:57:52.928" endtime="20220502 04:58:04.068"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220502 04:58:04.069" endtime="20220502 04:58:06.425"/>
+</kw>
+<status status="PASS" starttime="20220502 04:57:52.927" endtime="20220502 04:58:06.426"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" starttime="20220502 04:57:52.580" endtime="20220502 04:58:06.427"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="WebTesting">WebTesting</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
