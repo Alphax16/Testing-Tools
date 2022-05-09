@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.7 on win32)" generated="20220506 06:07:25.711" rpa="false" schemaversion="3">
+<suite id="s1" name="DesktopAppTesting" source="E:\Python Automation Testing\Python_Testing_Tool\Testers\DesktopAppTesting.robot">
+<test id="s1-t1" name="Automate GUI" line="14">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Hello Robot</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220506 06:07:26.126" endtime="20220506 06:07:26.127"/>
+</kw>
+<kw name="Tuz">
+<kw name="Run">
+<arg>notepad.exe</arg>
+<msg timestamp="20220506 06:07:26.137" level="FAIL">No keyword with name 'Run' found.</msg>
+<status status="FAIL" starttime="20220506 06:07:26.137" endtime="20220506 06:07:26.138"/>
+</kw>
+<status status="FAIL" starttime="20220506 06:07:26.127" endtime="20220506 06:07:26.139"/>
+</kw>
+<status status="FAIL" starttime="20220506 06:07:26.125" endtime="20220506 06:07:26.141">No keyword with name 'Run' found.</status>
+</test>
+<doc>Simple example using AutoItLibrary.</doc>
+<status status="FAIL" starttime="20220506 06:07:25.713" endtime="20220506 06:07:26.144"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="DesktopAppTesting">DesktopAppTesting</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220506 06:07:26.118" level="ERROR">Error in file 'E:\Python Automation Testing\Python_Testing_Tool\Testers\DesktopAppTesting.robot' on line 5: Initializing library 'AutoItLibrary' with no arguments failed: com_error: (-2147221005, 'Invalid class string', None, None)
+Traceback (most recent call last):
+  File "E:\Python Automation Testing\Python_Testing_Tool\lib\site-packages\win32com\client\dynamic.py", line 86, in _GetGoodDispatch
+    IDispatch = pythoncom.connect(IDispatch)
+pywintypes.com_error: (-2147221005, 'Invalid class string', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python Automation Testing\Python_Testing_Tool\lib\site-packages\AutoItLibrary\__init__.py", line 91, in __init__
+    self._AutoIt = win32com.client.Dispatch("AutoItX3.Control")
+  File "E:\Python Automation Testing\Python_Testing_Tool\lib\site-packages\win32com\client\__init__.py", line 117, in Dispatch
+    dispatch, userName = dynamic._GetGoodDispatchAndUserName(dispatch, userName, clsctx)
+  File "E:\Python Automation Testing\Python_Testing_Tool\lib\site-packages\win32com\client\dynamic.py", line 106, in _GetGoodDispatchAndUserName
+    return (_GetGoodDispatch(IDispatch, clsctx), userName)
+  File "E:\Python Automation Testing\Python_Testing_Tool\lib\site-packages\win32com\client\dynamic.py", line 88, in _GetGoodDispatch
+    IDispatch = pythoncom.CoCreateInstance(
+pywintypes.com_error: (-2147221005, 'Invalid class string', None, None)</msg>
+</errors>
+</robot>

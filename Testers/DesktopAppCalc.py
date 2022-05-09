@@ -1,7 +1,5 @@
 from tkinter import *
 
-# from skimage._shared.testing import fetch
-
 
 class DesktopAppCalc:
     def desktopAppCalc(self):
@@ -10,7 +8,7 @@ class DesktopAppCalc:
     def monthly_payment(self, entries):
         # period rate:
         r = (float(entries['Annual Rate'].get()) / 100) / 12
-        print("r", r)
+        print('r', r)
         # principal loan:
         loan = float(entries['Loan Principle'].get())
         n = float(entries['Number of Payments'].get())
